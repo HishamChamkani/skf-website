@@ -57,7 +57,7 @@ export default function WorkGallery() {
         <button
           type="button"
           onClick={() => setVisible((v) => v + PAGE_SIZE)}
-          className="relative mt-12 inline-flex h-[49px] items-center justify-center overflow-hidden rounded-2xl border border-coal bg-coal px-10 text-[17px] font-medium leading-[19.8px] tracking-[-0.72px] text-white shadow-[0px_0.723px_0.723px_-1.25px_rgba(0,0,0,0.22),0px_2.746px_2.746px_-2.5px_rgba(0,0,0,0.19),0px_12px_12px_-3.75px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coal"
+          className="relative mt-12 inline-flex h-[49px] items-center justify-center overflow-hidden rounded-2xl border border-coal bg-coal px-10 text-[17px] font-medium leading-[19.8px] tracking-[-0.72px] text-white shadow-[0px_0.723px_0.723px_-1.25px_rgba(0,0,0,0.22),0px_2.746px_2.746px_-2.5px_rgba(0,0,0,0.19),0px_12px_12px_-3.75px_rgba(0,0,0,0.08)] transition-colors duration-200 hover:border-brand hover:bg-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coal"
         >
           <span
             aria-hidden

@@ -28,7 +28,7 @@ export function DarkButton({ href, children, className = "" }: { href: string; c
   return (
     <Link
       href={href}
-      className={`relative inline-flex h-[49px] items-center justify-center overflow-hidden rounded-2xl border border-coal bg-coal px-10 pb-[14.6px] pt-[13.6px] text-[17px] font-medium leading-[19.8px] tracking-[-0.72px] text-white shadow-[0px_0.723px_0.723px_-1.25px_rgba(0,0,0,0.22),0px_2.746px_2.746px_-2.5px_rgba(0,0,0,0.19),0px_12px_12px_-3.75px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coal ${className}`}
+      className={`relative inline-flex h-[49px] items-center justify-center overflow-hidden rounded-2xl border border-coal bg-coal px-10 pb-[14.6px] pt-[13.6px] text-[17px] font-medium leading-[19.8px] tracking-[-0.72px] text-white shadow-[0px_0.723px_0.723px_-1.25px_rgba(0,0,0,0.22),0px_2.746px_2.746px_-2.5px_rgba(0,0,0,0.19),0px_12px_12px_-3.75px_rgba(0,0,0,0.08)] transition-colors duration-200 hover:border-brand hover:bg-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coal ${className}`}
     >
       <span
         aria-hidden
