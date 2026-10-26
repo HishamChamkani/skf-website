@@ -34,7 +34,7 @@ export function ContactButton({ className = "" }: { className?: string }) {
   return (
     <Link
       href="/contact"
-      className={`relative h-[37px] items-center justify-center gap-1.5 rounded-[10px] border border-[rgba(13,13,13,0.2)] bg-[#454545] px-4 text-[13.6px] font-medium leading-[19.6px] tracking-[-0.144px] text-white shadow-[inset_0px_0.602px_1.084px_-0.5px_rgba(255,255,255,0.07),inset_0px_2.289px_4.119px_-1px_rgba(255,255,255,0.08),inset_0px_10px_18px_-1.5px_rgba(255,255,255,0.14)] transition-colors hover:bg-[#525252] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${className}`}
+      className={`relative h-[37px] items-center justify-center gap-1.5 rounded-[10px] border border-[rgba(13,13,13,0.2)] bg-[#454545] px-4 text-[13.6px] font-medium leading-[19.6px] tracking-[-0.144px] text-white shadow-[inset_0px_0.602px_1.084px_-0.5px_rgba(255,255,255,0.07),inset_0px_2.289px_4.119px_-1px_rgba(255,255,255,0.08),inset_0px_10px_18px_-1.5px_rgba(255,255,255,0.14)] transition-colors duration-200 hover:border-brand hover:bg-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${className}`}
     >
       <ContactIcon />
       Contact Us
@@ -66,7 +66,7 @@ export default function SiteHeader() {
                     href={link.href}
                     aria-current={active ? "page" : undefined}
                     className={`flex h-7 items-center rounded-md px-2 text-[14px] font-medium leading-[19.6px] tracking-[-0.144px] transition-colors focus-visible:outline-2 focus-visible:outline-white ${
-                      active ? "text-brand" : "text-white/60 hover:text-white"
+                      active ? "text-brand" : "text-white/60 hover:text-brand"
                     }`}
                   >
                     {link.label}
@@ -112,7 +112,7 @@ export default function SiteHeader() {
                       href={link.href}
                       onClick={() => setOpen(false)}
                       aria-current={active ? "page" : undefined}
-                      className={`block rounded-md px-3 py-3 text-base font-medium ${active ? "text-brand" : "text-white/80"}`}
+                      className={`block rounded-md px-3 py-3 text-base font-medium ${active ? "text-brand" : "text-white/80 hover:text-brand"}`}
                     >
                       {link.label}
                     </Link>

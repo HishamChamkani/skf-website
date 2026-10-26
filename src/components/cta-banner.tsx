@@ -51,7 +51,7 @@ export default function CtaBanner() {
           </p>
           <Link
             href="/contact"
-            className="relative inline-flex items-center justify-center rounded-[40px] bg-white px-5 py-[14px] text-[16px] font-semibold leading-[19.2px] text-brand shadow-[0px_0.796px_1.433px_-0.625px_rgba(0,0,0,0.08),0px_2.415px_4.346px_-1.25px_rgba(0,0,0,0.08),0px_6.383px_11.489px_-1.875px_rgba(0,0,0,0.08),0px_20px_36px_-2.5px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="relative inline-flex items-center justify-center rounded-[40px] bg-white px-5 py-[14px] text-[16px] font-semibold leading-[19.2px] text-brand shadow-[0px_0.796px_1.433px_-0.625px_rgba(0,0,0,0.08),0px_2.415px_4.346px_-1.25px_rgba(0,0,0,0.08),0px_6.383px_11.489px_-1.875px_rgba(0,0,0,0.08),0px_20px_36px_-2.5px_rgba(0,0,0,0.08)] transition-colors duration-200 hover:bg-brand hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             Book a Free Discovery Call
           </Link>
