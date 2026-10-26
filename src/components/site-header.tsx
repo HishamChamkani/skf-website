@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { navLinks, site } from "@/lib/site";
 
+const darkTopPages = ["/contact"];
+
 function isActive(pathname: string, href: string) {
   if (href.includes("#")) return false;
   if (href === "/") return pathname === "/";
@@ -45,12 +47,21 @@ export function ContactButton({ className = "" }: { className?: string }) {
 export default function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  // Pages with a dark top area use the white logo (as in the Figma contact frame).
+  const darkTop = darkTopPages.some((p) => pathname === p);
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="container-site relative flex h-[88px] items-center justify-between">
         <Link href="/" aria-label={`${site.fullName} home`} className="relative block h-[52px] w-[111px] shrink-0">
-          <Image src="/images/logo-header.png" alt={site.fullName} fill sizes="111px" preload className="object-contain" />
+          <Image
+            src={darkTop ? "/images/logo-header-white.png" : "/images/logo-header.png"}
+            alt={site.fullName}
+            fill
+            sizes="111px"
+            preload
+            className="object-contain"
+          />
         </Link>
 
         <nav
